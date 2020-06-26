@@ -15,11 +15,14 @@
     *           1.7976931348623157e+308
     *           10的308次方，1后面308位；
     *           数字超过最大值，会返回“ Infinity ： 正穷大”
-    *       -   使用 typeof 检查 “NaN、Infinity” 返回 Number；
-    *           NaN 是 Number
+    *       - typeof：检查数据类型
+    *           检查 “NaN、Infinity” 返回 Number；
+    *           NaN 非法数字
     *       - Number.MIN_VALUE: 0 以上的最小值；
     * 
-    *   - 
+    *   - 如果使用 JS 进行浮点元素，会得到一个不准确的结果；（如 0.1 + 0.2）
+    *     千万不要使用 JS 进行精确度比较高的计算；
+    * 
     */
 
         var a = Number.MIN_VALUE;
