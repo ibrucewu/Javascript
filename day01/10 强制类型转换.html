@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script type="text/javascript">
+
+    /*
+    *   强制类型转换：
+            - 一个数据类型强制转换为其它数据类型
+    *       - 将其它数据类型转换成 String、Number、Boolean；
+    *       - 
+    *   将其它数据类型转换为string
+    *       方式 1
+    *       - 调用被转换类型 toString()方法
+    *       - 不会影响原来的
+    *       
+    *       方式 2
+    *       -  调用 String() 函数，并将转化的数据作为参数
+    */
+
+    // var a = true;
+    // var a = a.toString();
+    // 调用a的tostring()方法；
+
+
+    // var a = Null;
+    // var a = a.toString(); 报错
+
+    // var a = underfind;
+    // var a = a.toString(); 报错
+
+    a = Null;
+    a = String(a);
+    
+
+    console.log(a)
+    console.log(typeof a)
+
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>
