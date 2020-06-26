@@ -13,8 +13,14 @@
 <!-- 
     将js代码写在 onclick 属性中
     当我们点击时，js 会执行
+
+    属于结构和行为耦合，不方便维护
  -->
 <button onclick="alert('讨厌！点我干嘛！');">点我以下</button>
-<a href="">你也点我以下</a>
+
+<!-- 
+    将代码写在 href 属性中，当点击时，js开始执行；
+ -->
+<a href="javascript:alert('让你点你就点！');">你也点我以下</a>
 
 </html>
