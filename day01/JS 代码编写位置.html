@@ -7,10 +7,25 @@
 
     <!-- 
         可以将代码编写到外部 js 文件中，通过 script 标签引用
-         
+        优点：
+        1. 可以在不同页面中同时引用，可以利用到浏览器缓存机制；
+        2. Script 标签有外部引用后，内部到就不可以用了。如果要用内部的需要再写一个。
      -->
     <script type="text/javascript" src="js/scripd.js">
+    
+    alert("我是内部提示1！")
+    
     </script>
+    
+    <!-- 
+        内部测试 alert
+     -->
+    <script type="text/javascript">
+        alert("我是内部提示2！")
+    </script>
+
+
+    
 
 </head>
 <body>
