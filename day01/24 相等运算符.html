@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /*
+        *   比较两个值是否相等
+        *   如果相等，返回Ture；不相等，返回false；
+        *   
+        *   使用 == 来做相等运算
+        *       - 当时有 == 进行两个值比较时，如果类型不同
+        *           则会自动进行类型转换，将其转换为相同等类型，然后再比较
+        *
+        */ 
+
+        var a = 10
+        console.log( a == 10); 
+
+        console.log("1" == 1);  // 字符串转换为什么 - 不一定，大部分转换为数字；
+        document.write(1 == 1)
+        console.log(true == "1")    // 
+        console.log(NaN == 0)   // 似乎没转成数字
+
+        console.log(NaN == NaN) // NaN 不和任何值相等，包括它本身
+
+        // 可以通过 isNaN() 判断是不是 NaN
+        //  - isNaN()
+
+        var b = NaN
+        console.log(isNaN(b))
+
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
