@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+        /*
+        *   关系运算符可以比较两个值之间的大小关系，
+        *       成立为true，不成立为false；
+        * 
+        *   > 大于号
+        *       - 关系成立，返回true；不成立返回talse；
+        *   <、<=
+        * 
+        */
+
+        var result= 50 < 10;
+        result = 4 <= 4;
+        console.log("result = " +result);
+
+        /*
+        *   对于非数值比较时，会先转化成数字再比较
+        *   任何值和 NaN 和比较都是 false
+        *   符号两边都是字符串时，会进行字符编码进行比较（只比较第一位,如果两个第一位一样 则比较下一位）
+        *       - 可进行人名顺序排序；
+        *   如果比较字符串的数字，会得到不可预期的结果；
+        *       - 在比较两个字符串时，要转型
+        */
+
+        // console.log(1 >= true)
+        // console.log(1>0)
+        console.log("a" < "b");
+        console.log(+"11" > +"5");
+
+    </script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
