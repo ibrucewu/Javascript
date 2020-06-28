@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+    /*
+    *   &&·与 运算 非布尔值情况：
+    *       - 对于非布尔值进行运算时，
+    *           会先将其转化为布尔值，然后在运算，并返回原值；
+    * 
+    *       - 有 false，返回靠前面的原值；
+    */
+        var result = 0 && NaN;
+        console.log("result = " +result)
+
+
+    /*
+    *   ||·或 运算 非布尔值情况
+    *       - 第一个值为 true，返回第一个原值；
+    *       - 第一个为 False，返回第二个原值；
+    *
+    */
+        var result = "你好" || 0;
+        console.log("result = " +result);
+
+        </script>
+    
+    
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+    // ! 非运算
+    /*   - 可以对一个值进行非运算；
+    *   - 就是指对 布尔值 进行取反操作；
+    *   - 如果对一个值进行2次取反，则不变；
+    *   - 对非布尔值进行运算，则会 ”先转换为布尔值，然后再取反”；
+    *   - 可以利用该特点，将其它数据转换为布尔值；
+    */
+        var b = 10;
+        b = !!b;
+        console.log("b = " +b);
+        console.log(typeof b);
+
+    /* && 与运算 —— 找false
+    *      - 只要有一个值为 false 则返回 false；
+    *       - 两个都为 true 才会返回 true；
+    *       - 有错就会返回；
+    *
+    */
+        var result = true && true;
+        var result = true && false;
+        var result = false && false;
+        console.log(result);
+
+    /* || 或运算 —— 找true
+    *       - 或运算 是找true，有它就返回；
+    *       - || 两个值中又一个是 true 就返回true，两个都为false才返回false；
+    *
+    */
+        result = true  || false;
+        result = false || false;
+        result = true  || true;
+        console.log(result);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

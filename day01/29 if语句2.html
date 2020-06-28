@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            if语句
+                语法二：
+                    if(条件表达式){
+                        语句...
+                    }else{
+                        语句...
+                    }
+                if...else... 语句
+
+                语法三：
+                    if(条件表达式){
+                        语句...
+                    }else if(条件表达式){
+                        语句...
+                    }else if(条件表达式){
+                        语句...
+                    }
+                if...else if...else
+                    从上倒下依次对表达式进行求值判断
+                    如果值为True，则执行当前语句；
+                    如果值为false，则继续向下判断；
+                    一旦代码块执行，则直接结束语句；
+
+        */
+
+        //  if...else... 语句
+                var age = 50;
+                if(age >= 60){
+                    alert("退休了")
+                }else{
+                    alert("没退休")
+                }
+        //
+            var age = 200.123;
+            if(age >100){
+                alert("地球就这么大，活着挺没意思的")
+            }else if(age > 60 && age <100){
+                alert("真希望长命百岁")
+            }else if(age > 30 && age <= 60){
+                alert("时间变得有点快呀")
+            }else if(age > 17 && age <= 30){
+                alert("哎～长大点应该就有钱了")
+            }else{
+                alert("你还是个孩子")
+            }    
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
