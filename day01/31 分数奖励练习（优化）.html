@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+   
+
+    // 用户输入
+    while(true){
+        //score 是小明的成绩
+        score =  prompt("请输入你的分数");
+        //判断用户输入是否合法
+        if(score >= 0 && score <= 100){
+        //合法后退出
+        break;
+        }
+        alert("大佬！请输入 0～100 内的有效分数")
+    }
+
+    // 根据分数分配奖励
+    if(score == 100){
+        alert("奖励大佬 🚗BMW一台，下周三带上100万去4S店提车")
+    }else if(score >= 80){
+        alert("奖励大佬 📱iPhone12 一部，明天带上 1万去苹果店拿货")
+    }else if(score >= 60){
+        alert("奖励 📖一本书，回家好好学学吧！")
+    }else{
+        alert("🤬小子，放学别走！")
+    }
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

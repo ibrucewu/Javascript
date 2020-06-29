@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+            创建一个循环：        
+            1. 创建一个初始化变量；
+            2. 在循环中设置一个条件表达式；
+            3. 定义一个更新表达式，每次更新初始化变量值；
+        
+            循环语句：
+                可以反复执行一段代码多次
+                
+        while 循环
+            - 语法：
+                while(条件表达式){
+                    语句...
+                }
+            - while 语句循环时，先对条件表达式求值判断：
+                如果为 ture，执行判断，
+                执行完毕后继续进行判断，如果为ture，继续执行；
+                如果值为false，终止循环
+        
+        do...while 循环  
+            会先执行循环体，执行完后再判断；
+            如果为true，则继续
+            如果为false，则停止；
+            
+        区别：
+        do...while 循环体保证循环可以执行一次，
+        */
+
+        // while 循环
+        var n = 0;
+        while (n <= 100) {
+            document.write(n++ + "-")
+        }
+        document.write("<br />")
+        document.write("<br />")
+        document.write("<br />")
+        document.write("<br />")
+
+        var i = 1;
+        do {
+            document.write(i++ + "-")
+        } while (i <= 0)
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

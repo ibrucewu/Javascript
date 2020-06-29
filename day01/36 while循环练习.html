@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <script>
+
+        /*
+            题目
+            假如投资的年利率为5%，试求从 1000 块增长到 5000 块，需要多少年？
+                1000  1000*1.05
+                1050  1050*1.05
+                ...
+                5000  多少年？
+        */
+
+        // 初始费用
+        var money = 1000;
+
+        // 计数器，了解执行多少次循环
+        var count = 0;
+
+        // 定义一个 while 循环
+        while(money < 5000){
+            
+            // 每年增加的费用
+            money = money * 1.05;
+            
+            // 计数
+            count++
+        }
+
+        // 输出
+        document.write("一共需要" +count +"年，你的费用约为" +parseInt(money) +"元");
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
