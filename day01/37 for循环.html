@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +13,25 @@
             - 条件表达式
             - 更新表达式
         
-        for循环 语法
-        
+        for循环 语法 
+            执行顺序：
+                for(1.初始化表达式; 2.条件表达式; 4.更新表达式){
+                    3.语句
+                }
+            说明：
+            1. 执行初始化表达式 (只执行一次)
+            2. 执行条件表达式，判断是否执行；
+                为true，执行循环语句3
+                为false，终止循环
+            4. 执行更新表达式，更新表达式执行完毕重复执行 （1. 初始化表达式）
 
+
+        for特点：
+            1. for循环中的三个部分都可以省略不写，也可以写在外部；
+            2. 结构清楚；
     */
 
-
+    /*
     // 创建一个执行10次while循环
         //初始化表达式
         var i = 0;
@@ -27,9 +40,17 @@
         while(i < 10){
             // 设置更新表达式
             alert(i++);
-            break;
         }
+    */
 
+    for(i = 0; i<10; i++){
+        alert(i);
+    }
+
+    // 死循环
+        // for(;;){
+        //     alert("你点我啊！");
+        // }
 
 
 
