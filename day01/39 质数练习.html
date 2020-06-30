@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+            在页面接收一个数字，并判断数字是不是质数；
+                1. 大于1
+                2. 能被1整除；
+                3. 能被自己整除；
+                4. 不能被其它自然数整除
+        */
+
+        num = prompt("请输入一个大于1的整数")
+
+        //判断是否合法
+        if (num <= 1) {
+            alert("该值不合法")
+        } else {
+            //创建一个数字保存当前状态
+            //默认num是质数
+            var flag = true;
+
+            // 判断是不是质数
+            // 获取2～num之间的数
+            for(var i=2; i<num; i++){
+                // document.write(i)
+                // 判断num是否能被i整除 
+                if(num%i === 0){
+                    //如果能被i整除，则说明num不是质数；
+                    flag = false;
+
+                }
+            }
+        }
+
+
+
+        </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
