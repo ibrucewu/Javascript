@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // 判断用户输入的数字是不是质数
+
+        var num = prompt("请输入一个大于1的数字");
+
+        if (num <= 1) {
+            alert("输入错误，请输入一个大于1的数字");
+        } else {
+            
+            var flag = true;
+
+            for (var i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    flag = false;
+                }
+            }
+            
+            if (flag) {
+                alert(num + "是质数");
+            } else {
+                alert("不是质数");
+            }
+        }
+
+
+        // var num = prompt("输入一个大于1的")
+        // if (num <= 1) {
+        //     alert("该值不合法！");
+        // } else {
+        //     var flag = true;
+        //     for (var i = 2; i < num; i++) {
+
+        //         if (num % i === 0); {
+        //             flag = false;
+        //         }
+        //     }
+        //     if (flag) {
+        //         alert(num + "不是质数")
+        //     } else {
+        //         alert(num + "是质数");
+        //     }
+        // }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

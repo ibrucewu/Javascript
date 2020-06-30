@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+
+            通过程序，生成
+            *       <1
+            **      <2
+            ***     <3
+            ****    <4
+            *****   <5
+
+            先实现
+            *****
+            *****
+            *****
+            *****
+                        i   j
+            *****   1   0   <5
+            ****    2   1   <4
+            ***     3   2   <3
+            **      4   3   <2
+            *       5   4   <1
+
+
+
+        */
+
+        // 向 body 输出：
+        // document.write("*****" +"<br/>")
+        // document.write("*****" +"<br/>")
+        // document.write("*****" +"<br/>")
+        // document.write("*****" +"<br/>")
+        // document.write("*****" +"<br/>")
+
+
+
+
+        // 通过for循环绘画出图像
+        // 执行几次，图像高度就是多少
+        // 他可以控制高度
+
+        for (var i = 0; i < 5; i++) {
+            // 在循环内部
+            // 外部一次，内部就执行5次；
+
+
+
+            // for(var j=0; j<i-1 ; j++){
+            //     document.write("*&nbsp;&nbsp;&nbsp;")
+            // }
+
+            for(var j=0; j<5-i ; j++){
+                document.write("*&nbsp;&nbsp;&nbsp;")
+            }
+
+            // 输出换行
+            document.write("<br/>")
+            
+        }
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
