@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-
-
-
-
-
-
-
-
         /*
             break：
             - 可以退出 switch 或 循环语句；
-            - 
+            - if里面不可以使用 bresk；
+            - break 关键字会立即终止和他一起对循环语句
 
+            指定终止某个语句
+            - 可以为循环语句创建 label，来标示当前的循环；
+            - 使用break时，可以在break后面更上一个label
+            
+            
+            
             continue
-
+            用来只跳过当次循环；
+            - 只会对离它最近对循环起作用；
 
 
 
         */
 
+        // break练习：
+        // outer:
+        // for (var i = 0; i < 5; i++) {
+        //     document.write("外循环" + i + "<br/>")
+        //     for (var j = 0; j < 5; j++) {
+        //         document.write("内循环" + j + "<br/>")
+        //     }
+        // }
+        // break outer;
 
 
-        for(var i=0; i<=5; i++){
-            document.write(i)
-            // break;
-        }
 
-        if(true){
-            document.write("hollw")
-            break;
-        }
+        // continue练习：
+        // for (var i = 0; i < 5; i++) {
+        //     for (var j = 0; j < 5; j++) {
+        //         if (j == 1) {
+        //         }
+        //         continue
+        //     }
+        //     document.write("外循环" + i + "<br/>")
+        // }
+
+
+        ///
+
+
+
+
 
     </script>
 
 
 </head>
+
 <body>
-    
 </body>
+
 </html>
