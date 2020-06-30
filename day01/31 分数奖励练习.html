@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+
+        /*
+            100 奖励 BMW
+            80～100 奖励 iPhone 12
+            60~100 奖励 一本书
+            0～60 叫家长
     
-    /*
-        100 奖励 BMW
-        80～100 奖励 iPhone 12
-        60~100 奖励 一本书
-        0～60 叫家长
-
-        100以上 || 0以下 || isNaN()
-
-    */
-
-
-    score =  prompt("请输入分数");
-
-    if (score > 100 || score < 0 || isNaN(score)){
-        alert("请输入 1～100 之间的数据")
-        // proment("请输入分数")
-    }else if(score === 100){
-        alert("奖励 BMW一台")
-    }else if(score >= 80){
-        alert("奖励 iPhone12 一部")
-    }else if(score >= 60){
-        alert("奖励 一本书")
-    }else {
-        alert("叫家长")
-    }
-
-
+            100以上 || 0以下 || isNaN()
     
+        */
+
+
+        score = prompt("请输入分数");
+
+        if (score > 100 || score < 0 || isNaN(score)) {
+            alert("请输入 1～100 之间的数据")
+            // proment("请输入分数")
+        } else if (score === 100) {
+            alert("奖励 BMW一台")
+        } else if (score >= 80) {
+            alert("奖励 iPhone12 一部")
+        } else if (score >= 60) {
+            alert("奖励 一本书")
+        } else {
+            alert("叫家长")
+        }
+
+
+
 
     </script>
 
 
 
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
