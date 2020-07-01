@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            函数 Function
+                - 函数是一个对象；
+                - 函数中可以封装一些代码、功能，在需要时可以执行 调用 修改；
+                - 
+        */
+        // 特点
+        // 创建函数对象
+        // 可以将封装的代码以字符串的形式
+        // 封装的函数代码不会立即执行，会在调用的时候开始执行；
+
+
+
+        // 实际开发中很少这样使用：
+        // var fun = new Function("console.log('这是我的第一段函数');");
+        // console.log(fun)
+
+        // 函数调用：函数对象()
+        // 调用函数时，函数中的代码会按照顺序执行；
+        // fun();
+
+        // 函数对象有普通对象的功能
+        // fun.hello = "你好";
+        // console.log(fun.hello)
+
+        /*
+        使用函数声明创建函数
+            方法：
+                function 函数名([形式1, 形式2, ]){
+                    语句
+                }
+        */
+
+
+        // 常用方式1
+        function fun2(){
+            console.log('这是我的第二段函数');
+            alert("哈哈哈哈")
+            alert("呜呜呜😭")
+        }
+
+        console.log(fun2)
+
+
+        fun2()
+
+
+
+        // 常用方式2
+        var fun3 = function () {
+            console.log("我是没名字的function")
+        };
+
+        console.log(fun3)
+        fun3()
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
