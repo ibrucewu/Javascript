@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- <html lang="en"> -->
+<html lang="cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <script>
-
         /*
             数据类型
                 基本：
@@ -19,7 +19,6 @@
                     不足：
                     - 都是单一的值；
                     - 值和值之间没有联系；
-                    
                 
                     -----
                 特殊：
@@ -36,15 +35,42 @@
                                 console.log()   document.writh() 
                     3. 自定义对象
                         - 由开发人员创建的对象
-                    
 
-
+        创建对象:
+            使用 new 关键字是调用函数，是构建；
+            Object() ：调取函数；
+            可以向对象中添加属性；
+        语法：对象.属性名 = 属性值
         */
+       
+       /*
+       读取对象
+       obj.属性名
+       如果读取对象中没有的返回 undefined；
+       
+       修改对象
+       对象.属性名 = 新名字
 
 
-        for(var i=0; i<50; i++){
-   
-        }
+       删除对象
+       语法： delete obj.name
+
+
+
+       */
+        var obj = new Object;
+        obj.name = "孙悟空";
+        obj.gender = "男";
+        obj.age = 18;
+        
+        //修改对象
+        obj.name = "tom";
+
+        //删除对象
+        delete obj.name;
+
+        //输出到控制台
+        console.log(obj.name);
 
     </script>
 
@@ -53,11 +79,13 @@
     </style>
 
 </head>
+
 <body>
-    
 
 
 
 
-</body> 
+
+</body>
+
 </html>

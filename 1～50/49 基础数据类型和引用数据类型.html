@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+
+            基本基础数据类型
+                - string Number、Boolean、Null、Undefined、
+                - 修改不会互相影响
+                - 直接在站内保存
+
+            
+            对象（引用数据类型）
+                - 本身保存在堆内存中，每次创建对象就会新创建一个空间。
+                - 对象保存对是地址，对空间进行引用。
+                - 如果两个变量保存对是同一个引用，当一个变量修改属性时，另一个也会修改；可以做组建说明
+                - 两个一样，但是 不 ==，每次输出 new 就是开启全新的空间，两个对象；
+                - 当比较两个基本数据类型的值时，就是比较的值。比较两个引用数据类型时，比较的对象内存地址。如果两个对象一模一样，但是地址不同，也会返回false；
+                - 
+
+        */
+
+        // var obj = new Object();
+        // obj.name = "孙悟空";
+        // var obj2 = obj;
+        // obj.name = "猪八戒";
+
+        // 设置obj2为Nall
+        // obj2 = null;
+
+        // console.log(obj);
+        // console.log(obj2);
+
+        var c = 10;
+        var d = 10;
+        console.log(c == d)
+
+
+        var obj3 = new Object();
+        var obj4 = new Object();
+        obj3.name = "沙和尚";
+        obj4.name = "沙和尚";
+
+        console.log(obj3);
+        console.log(obj4);
+        console.log(obj3 == obj4)
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

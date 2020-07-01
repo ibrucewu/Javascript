@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var obj = new Object();
+        obj.name="悟空"
+
+        obj["123"] = 456;
+        obj["nihao"]="你好";
+
+        // var n = "123"
+        // console.log(obj[n])
+
+        var obj2 = new Object();
+        obj2.name="bajie"
+
+        obj.text=obj2
+
+        console.log("name" in obj)
+        console.log("text" in obj2)
+
+
+        // 特殊属性名，不可使用 .属性名称。要用 语法 
+        // 对象[“属性名”] = 属性值；
+        // 使用[]可以传递一个变量，变量是多少就会读取那个属性
+
+        // 属性值
+        // - 可以任意值；
+        // - 可以是对象;
+        
+        // in 检索属性名
+        // 可以检查对象中是否还有对应属性，有的话返回true
+        // “属性名” in 对象
+
+        
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
