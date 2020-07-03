@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+
+            创建一个 Person 构建函数
+                在person构造函数中，为每一个对象都添加一个sayName方法；
+                    目前方法在函数内部创建，构造函数每次执行就会创建新的 sayName方法
+                    也就是所有实例 sayName 都唯一,这样导致构造函数执行一次就会创建新的方法；执行10000次就会创建10000个一样的方法；
+        */
+
+
+        function Person(name, age, gender) {
+            this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.sayName = fun;
+            // 向对象添加方法
+        }
+
+        // 将 sayName 方法在全局中定义
+        //      - 会污染全局命名空间
+
+        function fun() {
+            alert("我是 +" + this.name);
+        };
+
+
+        // 创建person实例
+        var per1 = new Person("猪八戒", 22, "男");
+        var per2 = new Person("海峰", 12, "男");
+        var per3 = new Person("小飞", 11, "女");
+
+        per1.sayName();
+        per2.sayName();
+
+        // document.write(per)
+        // document.write(per2)
+        // document.write(per3)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

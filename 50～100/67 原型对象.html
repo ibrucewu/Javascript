@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 创建一个函数
+        function MyClass() {
+
+        }
+
+        // 向 MyClass 的原型中添加一个name 属性
+        MyClass.prototype.name = "我是原型的名字"
+        var mc = new MyClass();
+        mc.age = 18;
+
+        // console.log(mc.name)
+
+        // 使用 in 检查对象是不是有某个属性，如果对象没有 原型有也会返回true；
+
+        console.log("name" in mc)
+
+        // 检查对象自身中是不是有该属性,没有 就false；使用该方法只有对象自身中含有属性时，才会返回 true；
+            
+        console.log(mc.hasOwnProperty("age"))
+
+        console.log(mc.__proto__.hasOwnProperty("hasOwnProperty"))
+
+        // 原型对象也是对象 也有原型；
+            // 找自己-找原型-找原型的原型 --- 如果在object依然没找到，则返回 undefined；
+
+        console.log(mc.__proto__.__proto__.hasOwnProperty("hasOwnProperty"))
+
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

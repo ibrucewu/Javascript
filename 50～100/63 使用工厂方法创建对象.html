@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /* 
+            使用工程函数都是 object
+                - 都是object类型；
+                - 区分不了多种object 对象；
+        */
+
+
+        function createperson(name, age, gender) {
+            // 创建新对象
+            var obj = new Object()
+
+            // 想对象添加属性
+            obj.name = name,
+                obj.age = age,
+                obj.gender = gender,
+                obj.sayName = function () {
+                    document.write(this.name, this.age, this.gender);
+                };
+
+            // 创建对象放回
+            return obj;
+        }
+
+        function createDog(name, age) {
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.sayHello = function () {
+                document.write("wangwang ~",3)
+            };
+            return obj;
+        }
+
+
+
+        var obj2 = createperson("猪八戒", 28, "男");
+        var obj3 = createperson("孙悟空", 38, "男");
+        var obj4 = createperson("沙和尚", 48, "男");
+
+
+        // 创建狗对对象
+        var dog = createDog("旺财", 3)
+
+        dog.sayHello();
+
+        obj2.sayName();
+        obj3.sayName();
+        obj4.sayName();
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
