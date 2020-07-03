@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        /*
+            变量声明提前；
+                - 使用 var 声明的变量，会在所有代码执行前被声明（不会赋值）；
+                    如果声明时，不使用 var 关键词，变量不会被声明
+
+            函数声明提前：
+                - 使用函数声明创建的函数 function 函数(){
+                                                    }，创建的 函数和 var 创建的变量一样。
+                - 使用函数表达式创建的函数，不会被声明提前，不能提前调用。
+
+            全局作用域中的变量是全局变量，在页面任何地方都可以访问；
+
+        */
+
+
+    //    console.log("a =" +a)
+        
+    //     // 没 var 的话，会报错!
+    //     var a = 123;
+
+        // fun()
+                                            
+        // 函数声明会被提前创建
+        fun2()
+        function fun(){
+            console.log("我是fun函数")
+        }
+
+
+        // 函数表达式，不会提前创建
+        var fun2 = function(){
+            console.log("我是fun2函数")
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

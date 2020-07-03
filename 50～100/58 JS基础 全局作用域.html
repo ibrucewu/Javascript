@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+            作用域
+                一个变量的作用范围
+
+            2中作用域
+                1. 全局作用域
+                    - 直接编写在 script标签中对js代码，都在全局作用域中；
+                    - 在页面打开时创建，在页面关闭时关闭；
+                    - 在全局作用域中有一个全局对象 window（浏览器窗口），可以直接使用；
+                        window
+                        在全局作用域中，创建对变量都会作为 window 的属性保存；
+
+                2. 函数作用域
+                    - 
+
+        */
+
+        // 全局作用域
+        var a = 123;
+        var c = "hello"
+        function fun() {
+            console.log("我是fun 函数")
+        }
+        fun();
+
+        // a 的作用域只在函数里
+        // function fun() {
+        //     var a = 123;
+        // }
+
+
+
+        window.alert("asda")
+
+        console.log(window.c)
+
+
+
+
+
+
+
+
+
+
+
+        // 
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+            调方法
+                obj.sayHello()
+                调用 obj 对象的 sayHello 方法
+
+
+            调函数
+                fun()    
+                调用 fun 函数
+
+        */
+
+        //创建一个对象
+        var obj = new Object();
+
+        // 添加属性
+        obj.name = "孙悟空";
+        obj.age = 18;
+
+
+        // 函数对象可以是任何数据类型，也可以是一个函数
+        obj.sayName = function () {
+            console.log(obj.name)
+        };
+
+        //调用函数
+        // console.log(obj.sayName)
+
+        //函数作为对象的属性保存，这个函数就是此对象的方法
+        // obj.sayName();
+
+
+
+        var obj2 =  {
+            
+            name:"猪八戒",
+            obj:18,
+            sayName:function(){
+                console.log(obj2.name)
+            }
+        }
+
+        obj2.sayName();
+
+
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

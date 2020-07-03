@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /*
+            枚举对象的属性
+                使用 for...in 语句
+                
+                语法：
+                for(var 变量 in 对象){
+                    
+                }
+
+                在对象中有几个语句，就会执行几次；
+                每次执行时，会讲对象中的 一个属性的名字赋值给变量
+
+        */
+
+
+        var obj = {
+            姓名:"孙悟空",
+            年龄:22,
+            性别: "男",
+            地址:"花果山"
+        };
+
+        for (var n in obj){
+            document.write(n +"：" +obj[n] +"</br>")
+        }
+        
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
